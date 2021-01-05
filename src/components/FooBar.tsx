@@ -1,7 +1,7 @@
 import React from 'react';
 import { css, withTheme } from '@emotion/react';
 
-const FooBar: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
+const FooBar: React.FC<INamesAppProps> = ({ theme }) => (
   <div
     css={css`
       color: ${theme.color.text.primary};
