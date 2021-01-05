@@ -4,7 +4,7 @@
 // TODO: light theme colors
 // TODO: darkt theme colors
 
-export const light: NamesAppTheme = {
+export const light: INamesAppTheme = {
   color: {
     text: {
       primary: '#33e',

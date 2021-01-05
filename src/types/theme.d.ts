@@ -1,13 +1,13 @@
-interface NamesAppThemeColors {
+interface INamesAppThemeColors {
   primary: string;
   secondary: string;
   tertiary?: string;
   warning?: string;
 }
 
-interface NamesAppTheme {
+interface INamesAppTheme {
   color: {
-    text: NamesAppThemeColors;
-    background: NamesAppThemeColors;
+    text: INamesAppThemeColors;
+    background: INamesAppThemeColors;
   }
 }

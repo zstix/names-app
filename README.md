@@ -6,7 +6,7 @@ Exploring a few topics by making an name choosing app.
 
 - [x] Repo
 - [x] Libraries & local development
-- [ ] Theme / provider
+- [x] Theme / provider
 - [ ] Theme choices 🎨
 - [ ] Main screen
 - [ ] Tests

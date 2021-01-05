@@ -1,18 +1,18 @@
 import React from 'react';
-import { css, useTheme } from '@emotion/react';
+import { css, withTheme } from '@emotion/react';
 
-const FooBar: React.FC = () => {
-  const theme = useTheme();
-
-  return (
-    <div
-      css={css`
-        color: ${theme.color.text.primary};
-      `}
-    >
-      Hello, Names App!
-    </div>
-  );
+interface IFooBarProps {
+  theme: INamesAppTheme;
 }
 
-export default FooBar;
+const FooBar: React.FC<IFooBarProps> = ({ theme }) => (
+  <div
+    css={css`
+      color: ${theme.color.text.primary};
+    `}
+  >
+    Hello, Names App!
+  </div>
+);
+
+export default withTheme(FooBar);
