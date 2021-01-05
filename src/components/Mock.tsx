@@ -1,14 +1,14 @@
 import React from 'react';
 import { css, withTheme } from '@emotion/react';
 
-const FooBar: React.FC<INamesAppProps> = ({ theme }) => (
+const Mock: React.FC<INamesAppProps> = ({ theme }) => (
   <div
     css={css`
       color: ${theme.color.text.primary};
     `}
   >
-    Hello, Names App!
+    Mock screen goes here.
   </div>
 );
 
-export default withTheme(FooBar);
+export default withTheme(Mock);

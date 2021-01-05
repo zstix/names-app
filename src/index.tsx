@@ -6,12 +6,12 @@ import { ThemeProvider } from '@emotion/react';
 import { light } from './theme';
 // TODO: remove this
 import GlobalStyles from './components/GlobalStyles';
-import FooBar from './components/FooBar'
+import Mock from './components/Mock'
 
 const App = (
   <ThemeProvider theme={light}>
     <GlobalStyles />
-    <FooBar />
+    <Mock />
   </ThemeProvider>
 );
 

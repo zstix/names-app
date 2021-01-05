@@ -29,6 +29,8 @@ const GlobalStyles: React.FC<INamesAppProps> = ({ theme }) => (
 
       body {
         font: ${theme.fonts.primary};
+        color: ${theme.color.text.primary};
+        background-color: ${theme.color.background.primary};
       }
     `}
   />

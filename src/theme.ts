@@ -19,7 +19,7 @@ export const light: INamesAppTheme = {
   ...baseTheme,
   color: {
     text: {
-      primary: '#33e',
+      primary: '#333',
       secondary: '#666',
     },
     background: {
