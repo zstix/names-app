@@ -10,4 +10,13 @@ interface INamesAppTheme {
     text: INamesAppThemeColors;
     background: INamesAppThemeColors;
   }
+  breakpoints: {
+    mobile: string;
+    tablet?: string;
+    desktop: string;
+  }
+  fonts: {
+    primary: string;
+    secondary?: string;
+  }
 }
