@@ -5,7 +5,7 @@ Exploring a few topics by making an name choosing app.
 ### To Do
 
 - [x] Repo
-- [ ] Libraries & local development
+- [x] Libraries & local development
 - [ ] Theme and settings providers
 - [ ] Main screen
 - [ ] Tests
