@@ -3,7 +3,7 @@ import { css, withTheme } from '@emotion/react';
 
 import Button from './Button';
 
-const Mock: React.FC<INamesAppProps> = ({ theme }) => (
+const Mock: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
   <div
     css={css`
       color: ${theme.color.text.primary};

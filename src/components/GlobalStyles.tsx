@@ -22,7 +22,7 @@ const reset = css`
   }
 `;
 
-const GlobalStyles: React.FC<INamesAppProps> = ({ theme }) => (
+const GlobalStyles: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
   <Global
     styles={css`
       ${reset}

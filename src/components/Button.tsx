@@ -2,8 +2,9 @@ import React from 'react';
 import { css, withTheme } from '@emotion/react';
 import * as Feather from 'react-feather';
 
-interface IButtonProps extends INamesAppProps {
+interface IButtonProps {
   to?: string;
+  theme: INamesAppTheme
 }
 
 interface IWithIcon extends IButtonProps {
