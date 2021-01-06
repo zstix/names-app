@@ -10,7 +10,7 @@ const Mock: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
     `}
   >
     Mock screen goes here.
-    <Button icon="settings" />
+    <Button icon="settings">settings</Button>
   </div>
 );
 

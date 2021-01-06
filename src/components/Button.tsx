@@ -4,8 +4,8 @@ import { css, withTheme } from '@emotion/react';
 import Icon, { ICON_TYPES } from './Icon';
 
 interface IButtonProps {
-  to?: string;
   theme: INamesAppTheme
+  onclick?: () => void; // TODO?
 }
 
 interface IWithIcon extends IButtonProps {
@@ -19,10 +19,10 @@ interface IWithText extends IButtonProps {
 }
 
 // TODO: styling
-const Button: React.FC<IWithText | IWithIcon> = ({ icon, theme }) => (
+const Button: React.FC<IWithText | IWithIcon> = ({ theme, icon, children }) => (
   <div role="button">
     {icon && <Icon name={icon} />}
-    <span>Button</span>
+    {children}
   </div>
 );
 
