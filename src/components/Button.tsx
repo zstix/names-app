@@ -1,6 +1,7 @@
 import React from 'react';
 import { css, withTheme } from '@emotion/react';
-import * as Feather from 'react-feather';
+
+import Icon, { ICON_TYPES } from './Icon';
 
 interface IButtonProps {
   to?: string;
@@ -8,7 +9,7 @@ interface IButtonProps {
 }
 
 interface IWithIcon extends IButtonProps {
-  icon: string;
+  icon: keyof typeof ICON_TYPES;
   children?: string;
 }
 
@@ -18,11 +19,9 @@ interface IWithText extends IButtonProps {
 }
 
 const Button: React.FC<IWithText | IWithIcon> = ({ icon, theme }) => {
-  const Icon: React.FC = Feather?.[icon];
 
   return (
     <div>
-      <Icon />
       <span>Button</span>
     </div>
   );
