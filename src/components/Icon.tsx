@@ -23,6 +23,7 @@ const Icon: React.FC<IIconProps> = ({ theme, name, color, strokeWidth = 3, size 
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
+    aria-hidden="true"
     fill="none"
     stroke={color || theme.color.text.primary}
     strokeWidth={strokeWidth}

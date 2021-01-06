@@ -15,16 +15,15 @@ interface IWithIcon extends IButtonProps {
 
 interface IWithText extends IButtonProps {
   children: string;
-  icon?: string;
+  icon?: keyof typeof ICON_TYPES;
 }
 
-const Button: React.FC<IWithText | IWithIcon> = ({ icon, theme }) => {
-
-  return (
-    <div>
-      <span>Button</span>
-    </div>
-  );
-};
+// TODO: styling
+const Button: React.FC<IWithText | IWithIcon> = ({ icon, theme }) => (
+  <div role="button">
+    {icon && <Icon name={icon} />}
+    <span>Button</span>
+  </div>
+);
 
 export default withTheme(Button);

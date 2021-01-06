@@ -2,7 +2,6 @@ import React from 'react';
 import { css, withTheme } from '@emotion/react';
 
 import Button from './Button';
-import Icon from './Icon';
 
 const Mock: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
   <div
@@ -12,10 +11,6 @@ const Mock: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
   >
     Mock screen goes here.
     <Button icon="settings" />
-    <p>
-      Icon: <br />
-      <Icon name="settings" />
-    </p>
   </div>
 );
 
