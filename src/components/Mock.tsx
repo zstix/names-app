@@ -4,19 +4,13 @@ import { css, withTheme } from '@emotion/react';
 import Button from './Button';
 
 const Mock: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
-  <div
-    css={css`
-      color: ${theme.color.text.primary};
-      padding: 20px;
-    `}
-  >
-    Mock screen goes here.
-    <Button icon="settings">settings</Button>
-    <br />
-    And also perhaps it goes here, I'm not really too sure.
-    <Button icon="settings" />
+  <div css={css`padding: 20px;`}>
     <p>
-      <Button noBorder>what?</Button>
+      Mock screen goes here.
+    </p>
+    <p>
+      <Button icon="heart">yay!</Button>
+      <Button icon="thumbs-down">nope</Button>
     </p>
   </div>
 );
