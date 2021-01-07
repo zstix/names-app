@@ -11,12 +11,12 @@ const Mock: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
     `}
   >
     Mock screen goes here.
-    <Button icon="settings">Settings</Button>
+    <Button icon="settings">settings</Button>
     <br />
     And also perhaps it goes here, I'm not really too sure.
     <Button icon="settings" />
     <p>
-      <Button noBorder>What?</Button>
+      <Button noBorder>what?</Button>
     </p>
   </div>
 );
