@@ -5,8 +5,16 @@ interface INamesAppThemeColors {
   warning?: string;
 }
 
+interface INamesAppThemeColorVariants {
+  red: string[];
+  green: string[];
+  blue: string[];
+  yellow: string[];
+  gray: string[];
+}
+
 interface INamesAppTheme {
-  color: {
+  color: INamesAppThemeColorVariants & {
     text: INamesAppThemeColors;
     background: INamesAppThemeColors;
   }

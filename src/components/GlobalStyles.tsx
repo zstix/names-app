@@ -20,6 +20,11 @@ const reset = css`
     list-style: none;
     padding: 0;
   }
+
+  h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+  }
 `;
 
 const GlobalStyles: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (

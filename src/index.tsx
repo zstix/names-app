@@ -4,8 +4,8 @@ import { ThemeProvider } from '@emotion/react';
 
 // TODO: settings context for theme
 import { light } from './theme';
-// TODO: remove this
 import GlobalStyles from './components/GlobalStyles';
+// TODO: remove this
 import Mock from './components/Mock'
 
 const App = (
