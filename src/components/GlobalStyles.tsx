@@ -37,6 +37,22 @@ const GlobalStyles: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
         color: ${theme.color.text.primary};
         background-color: ${theme.color.background.primary};
       }
+
+      h1, h2, h3 {
+        font: ${theme.fonts.secondary};
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.4em;
+      }
+
+      h3 {
+        font-size: 1.2em;
+      }
     `}
   />
 );

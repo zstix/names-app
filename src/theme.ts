@@ -1,7 +1,3 @@
-// TODO: fonts
-// TODO: light theme
-// TODO: darkt theme
-
 const mq = (size: number): string =>
   `@media screen and (min-width: ${size}px)`;
 
@@ -18,18 +14,21 @@ const base = {
     desktop: mq(1000)
   },
   fonts: {
-    primary: '18px/1.6 Helvetica, sans-serif'
+    primary: '18px/1.6 Helvetica, Arial, sans-serif',
+    secondary: `bold 18px/1.6 Georgia, sans-serif`
   },
 };
 
+// light -> dark
 const colors: INamesAppThemeColorVariants = {
-  red: ['tomato', 'maroon'],
-  green: [],
-  blue: [],
-  gray: [],
-  yellow: [],
+  red: ['tomato', 'firebrick', 'maroon'],
+  green: ['mediumseagreen', 'forestgreen', 'darkgreen'],
+  blue: ['dodgerblue', 'royalblue', 'midnightblue'],
+  gray: ['lightgray', 'gray', 'dimgray'],
+  yellow: ['khaki', 'gold', 'darkgoldenrod'],
 };
 
+// TODO: theme colors for fonts and backgrounds
 export const light: INamesAppTheme = {
   ...base,
   color: {

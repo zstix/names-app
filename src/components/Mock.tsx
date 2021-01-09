@@ -15,17 +15,22 @@ const Mock: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
     {Object.entries(theme.color).map(([color, variants]) => (
       <div key={color}>
         <h2>{color}</h2>
-        {Array.isArray(variants) && variants.map((variant, i) => (
+        {Array.isArray(variants) && variants.map((variant) => (
           <div
             key={variant}
             css={css`
               width: 4em;
-              height: 4em;
-              margin-right: 1em;
               display: inline-block;
-              background-color: ${variant};
-            `}
-          >{variant}</div>
+              margin-right: 1em;
+          `}>
+            <div>{variant}</div>
+            <div
+              css={css`
+                height: 4em;
+                background-color: ${variant};
+              `}
+            />
+          </div>
         ))}
       </div>
     ))}
