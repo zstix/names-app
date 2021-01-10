@@ -4,7 +4,7 @@ import { css, withTheme } from '@emotion/react';
 import Icon, { ICON_TYPES } from './Icon';
 
 interface IButtonProps {
-  theme: INamesAppTheme
+  theme: INamesAppTheme;
   color?: keyof INamesAppThemeColorVariants;
   noBorder?: boolean;
   onclick?: () => void;

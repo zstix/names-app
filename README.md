@@ -7,10 +7,10 @@ Exploring a few topics by making an name choosing app.
 - [x] Repo
 - [x] Libraries & local development
 - [x] Theme / provider
-- [ ] Theme choices 🎨
-- [ ] Main screen
-- [ ] Tests
-- [ ] Setting provider, screen & tests
-- [ ] List screen(s) & tests
-- [ ] Interfacing with server & tests
-- [ ] Authentication & tests
+- [x] Theme choices 🎨
+- [x] Main screen
+- [ ] Info
+- [ ] Setting provider, screen
+- [ ] List screen(s)
+- [ ] Interfacing with server
+- [ ] Authentication

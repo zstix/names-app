@@ -2,6 +2,7 @@ import React from 'react';
 import { css, withTheme } from '@emotion/react';
 
 import Button from './Button';
+import Info from './Info';
 
 const App: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
   <div css={css`
@@ -12,6 +13,7 @@ const App: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    position: relative;
   `}>
     <div css={css`align-self: flex-end;`}>
       <Button icon="settings" noBorder />
@@ -33,6 +35,7 @@ const App: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
       </div>
     </div>
     <Button icon="help-circle" noBorder />
+    <Info />
   </div>
 );
 
