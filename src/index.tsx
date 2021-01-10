@@ -6,13 +6,13 @@ import { ThemeProvider } from '@emotion/react';
 import { light } from './theme';
 import GlobalStyles from './components/GlobalStyles';
 // TODO: remove this
-import Mock from './components/Mock'
+import App from './components/App'
 
-const App = (
+const Root = (
   <ThemeProvider theme={light}>
     <GlobalStyles />
-    <Mock />
+    <App />
   </ThemeProvider>
 );
 
-ReactDOM.render(App, document.getElementById('root'));
+ReactDOM.render(Root, document.getElementById('root'));
