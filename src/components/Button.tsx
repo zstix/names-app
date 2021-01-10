@@ -5,6 +5,7 @@ import Icon, { ICON_TYPES } from './Icon';
 
 interface IButtonProps {
   theme: INamesAppTheme
+  color?: keyof INamesAppThemeColorVariants;
   noBorder?: boolean;
   onclick?: () => void;
 }
@@ -19,22 +20,28 @@ interface IWithText extends IButtonProps {
   icon?: keyof typeof ICON_TYPES;
 }
 
-// TODO: colors
-const Button: React.FC<IWithText | IWithIcon> = ({ theme, noBorder, icon, onclick, children }) => (
+const Button: React.FC<IWithText | IWithIcon> = ({
+  theme,
+  color,
+  noBorder,
+  icon,
+  onclick,
+  children
+}) => (
   <button
     role="button"
     onClick={() => onclick?.()}
     css={css`
-      --color-border: #ccc;
-      --color-background: #ddd;
-      --color-font: ${theme.color.text.primary};
+      --color-border: ${theme.color[color]?.[2] || theme.color.gray[2]};
+      --color-background: ${theme.color[color]?.[0] || theme.color.gray[1]};
+      --color-font: ${theme.color.gray[0]};
       --size-border: ${children ? 4 : 3}px;
       --size-adjust: ${children ? 2 : 3}px;
       --size-radius: ${children ? 0.75 : 1.5}em;
-      --size-padding: ${children ? '0.5em 0.8em' : '0.5em 0.6em'};
+      --size-padding: ${children ? '0.5em 0.8em' : '0.5em'};
 
       vertical-align: middle;
-      display: inline-flex;
+      display: flex;
       align-items: center;
       cursor: pointer;
       margin: 0 0.5em;

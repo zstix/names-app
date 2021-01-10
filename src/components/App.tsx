@@ -14,7 +14,7 @@ const App: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
     height: 100vh;
   `}>
     <div css={css`align-self: flex-end;`}>
-      <Button icon="settings" />
+      <Button icon="settings" noBorder />
     </div>
     <div>
       <h1 css={css`
@@ -28,11 +28,11 @@ const App: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
         align-items: center;
         justify-content: space-around;
       `}>
-        <Button icon="heart">like</Button>
-        <Button icon="thumbs-down">dislike</Button>
+        <Button icon="heart" color="green">like</Button>
+        <Button icon="thumbs-down" color="red">dislike</Button>
       </div>
     </div>
-    <Button icon="help-circle" />
+    <Button icon="help-circle" noBorder />
   </div>
 );
 

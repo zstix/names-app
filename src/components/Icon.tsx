@@ -44,8 +44,7 @@ const Icon: React.FC<IIconProps> = ({ theme, name, color, strokeWidth = 3, size 
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     aria-hidden="true"
-    stroke-linecap="round"
-    stroke-linejoin="round"
+    strokeLinecap="round"
     fill="none"
     stroke={color || DEFAULT_COLORS[name] || theme.color.text.primary}
     strokeWidth={strokeWidth}
