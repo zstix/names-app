@@ -24,22 +24,21 @@ const colors: INamesAppThemeColorVariants = {
   red: ['tomato', 'firebrick', 'maroon'],
   green: ['mediumseagreen', 'forestgreen', 'darkgreen'],
   blue: ['dodgerblue', 'royalblue', 'midnightblue'],
-  gray: ['lightgray', 'gray', 'dimgray'],
+  gray: ['floralwhite', 'lightgray', 'slategray', 'darkslategray'],
   yellow: ['khaki', 'gold', 'darkgoldenrod'],
 };
 
-// TODO: theme colors for fonts and backgrounds
 export const light: INamesAppTheme = {
   ...base,
   color: {
     ...colors,
     text: {
-      primary: '#333',
-      secondary: '#666',
+      primary: colors.gray[3],
+      secondary: colors.blue[2],
     },
     background: {
-      primary: '#eee',
-      secondary: '#ccc'
+      primary: colors.gray[0],
+      secondary: colors.green[0]
     },
   }
 };
@@ -49,12 +48,12 @@ export const dark: INamesAppTheme = {
   color: {
     ...reverseColors(colors),
     text: {
-      primary: '#333',
-      secondary: '#666',
+      primary: colors.gray[0],
+      secondary: colors.gray[0],
     },
     background: {
-      primary: '#eee',
-      secondary: '#ccc'
+      primary: colors.gray[3],
+      secondary: colors.blue[2]
     },
   }
 }
