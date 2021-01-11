@@ -1,5 +1,5 @@
 import React from 'react';
-import { css, Global, withTheme } from '@emotion/react';
+import { css, Global } from '@emotion/react';
 
 const reset = css`
   * {
@@ -27,34 +27,29 @@ const reset = css`
   }
 `;
 
-const GlobalStyles: React.FC<{ theme: INamesAppTheme }> = ({ theme }) => (
+const vars = css`
+  --color-bg: darkslategray;
+  --color-text: #333;
+
+  --font-primary: Helvetica, Arial, sans-serif;
+`;
+
+const GlobalStyles: React.FC = () => (
   <Global
     styles={css`
       ${reset}
 
+      :root {
+        ${vars}
+      }
+
       body {
-        font: ${theme.fonts.primary};
-        color: ${theme.color.text.primary};
-        background-color: ${theme.color.background.primary};
-      }
-
-      h1, h2, h3 {
-        font: ${theme.fonts.secondary};
-      }
-
-      h1 {
-        font-size: 2em;
-      }
-
-      h2 {
-        font-size: 1.4em;
-      }
-
-      h3 {
-        font-size: 1.2em;
+        font: 18px/1.6 var(--font-primary);
+        color: var(--color-text);
+        background-color: var(--color-bg);
       }
     `}
   />
 );
 
-export default withTheme(GlobalStyles);
+export default GlobalStyles;

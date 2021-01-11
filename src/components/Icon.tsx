@@ -1,5 +1,5 @@
 import React from 'react';
-import { withTheme } from '@emotion/react';
+import { css } from '@emotion/react';
 
 // https://feathericons.com/
 export const ICON_TYPES = {
@@ -34,32 +34,29 @@ export const ICON_TYPES = {
   )
 };
 
-const DEFAULT_COLORS: Partial<Record<keyof typeof ICON_TYPES, string>> = {
-  heart: 'tomato',
-}
-
 interface IIconProps {
-  theme: INamesAppTheme;
   name: keyof typeof ICON_TYPES;
   color?: string;
   size?: number;
   strokeWidth?: number;
 };
 
-const Icon: React.FC<IIconProps> = ({ theme, name, color, strokeWidth = 3, size = 24 }) => (
+const Icon: React.FC<IIconProps> = ({ name, color, strokeWidth = 3, size = 24 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     aria-hidden="true"
     strokeLinecap="round"
     fill="none"
-    stroke={color || DEFAULT_COLORS[name] || theme.color.text.primary}
     strokeWidth={strokeWidth}
     width={size}
     height={size}
+    css={css`
+      stroke: ${color || '--var(color-text)'};
+    `}
   >
     ${ICON_TYPES[name]}
   </svg>
 );
 
-export default withTheme(Icon);
+export default Icon;
