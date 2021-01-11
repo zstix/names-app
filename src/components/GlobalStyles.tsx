@@ -27,21 +27,26 @@ const reset = css`
   }
 `;
 
-const vars = css`
-  --color-bg: darkslategray;
-  --color-text: #333;
+const imports = css`
+  @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+`;
 
-  --font-primary: Helvetica, Arial, sans-serif;
+const vars = css`
+  :root {
+    --color-bg: #2f3d4f;
+    --color-text: #333;
+
+    --font-primary: Helvetica, Arial, sans-serif;
+    --font-marker: 'Permanent Marker', cursive;
+  }
 `;
 
 const GlobalStyles: React.FC = () => (
   <Global
     styles={css`
+      ${imports}
       ${reset}
-
-      :root {
-        ${vars}
-      }
+      ${vars}
 
       body {
         font: 18px/1.6 var(--font-primary);
