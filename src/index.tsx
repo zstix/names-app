@@ -4,6 +4,7 @@ import { css } from '@emotion/react';
 
 import GlobalStyles from './components/GlobalStyles';
 import NameCard from './components/NameCard';
+import Controls from './components/Controls';
 
 const App = (
   <div css={css`
@@ -15,6 +16,7 @@ const App = (
   `}>
     <GlobalStyles />
     <NameCard name="alexander" />
+    <Controls />
   </div>
 );
 
