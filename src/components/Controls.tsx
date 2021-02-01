@@ -1,9 +1,9 @@
-import React from 'react';
+import { FunctionComponent } from 'preact';
 import { css } from '@emotion/react';
 
 import Icon from './Icon';
 
-const Controls: React.FC = () => (
+const Controls: FunctionComponent = () => (
   <div css={css`
     stroke: white;
     display: flex;

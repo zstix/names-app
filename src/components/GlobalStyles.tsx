@@ -1,4 +1,4 @@
-import React from 'react';
+import { FunctionComponent } from 'preact';
 import { css, Global } from '@emotion/react';
 
 const reset = css`
@@ -41,7 +41,7 @@ const vars = css`
   }
 `;
 
-const GlobalStyles: React.FC = () => (
+const GlobalStyles: FunctionComponent = () => (
   <Global
     styles={css`
       ${imports}

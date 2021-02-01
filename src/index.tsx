@@ -1,5 +1,4 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'preact';
 import { css } from '@emotion/react';
 
 import GlobalStyles from './components/GlobalStyles';
@@ -20,4 +19,4 @@ const App = (
   </div>
 );
 
-ReactDOM.render(App, document.getElementById('root'));
+render(App, document.getElementById('root'));

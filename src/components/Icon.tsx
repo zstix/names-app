@@ -1,4 +1,4 @@
-import React from 'react';
+import { FunctionComponent } from 'preact';
 import { css } from '@emotion/react';
 
 // https://feathericons.com/
@@ -43,7 +43,7 @@ interface IIconProps {
   strokeWidth?: number;
 };
 
-const Icon: React.FC<IIconProps> = ({ name, color, strokeWidth = 3, size = 24 }) => (
+const Icon: FunctionComponent<IIconProps> = ({ name, color, strokeWidth = 3, size = 24 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"

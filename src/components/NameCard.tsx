@@ -1,11 +1,11 @@
-import React from 'react';
+import { FunctionComponent } from 'preact';
 import { css } from '@emotion/react';
 
 interface INameCardProps {
   name: string;
 };
 
-const NameCard: React.FC<INameCardProps> = ({ name }) => (
+const NameCard: FunctionComponent<INameCardProps> = ({ name }) => (
   <div css={css`
     --color-red: #df2323;
 
