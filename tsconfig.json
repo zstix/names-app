@@ -4,6 +4,7 @@
     "jsx": "react-jsx",
     "jsxImportSource": "@emotion/react",
     "moduleResolution": "node",
-    "target": "es2017"
+    "target": "es2017",
+    "skipLibCheck": true
   }
 }
