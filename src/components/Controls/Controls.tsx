@@ -1,11 +1,10 @@
 import { FunctionComponent } from 'preact';
-// import { css } from '@emotion/react';
 
-import styles from './controls.module.scss';
 import Icon from '../Icon';
+import './controls.css';
 
 const Controls: FunctionComponent = () => (
-  <div className={styles.controls}>
+  <div className="na-controls">
     <div role="button">
       <Icon name="x" />
     </div>
