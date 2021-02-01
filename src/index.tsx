@@ -1,19 +1,10 @@
 import { render } from 'preact';
-import { css } from '@emotion/react';
-
-import GlobalStyles from './components/GlobalStyles';
 import NameCard from './components/NameCard';
 import Controls from './components/Controls';
+import './styles.css';
 
 const App = (
-  <div css={css`
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  `}>
-    <GlobalStyles />
+  <div className="na-app">
     <NameCard name="alexander" />
     <Controls />
   </div>

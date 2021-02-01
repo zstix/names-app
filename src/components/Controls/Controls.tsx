@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'preact';
-
 import Icon from '../Icon';
 import './controls.css';
 

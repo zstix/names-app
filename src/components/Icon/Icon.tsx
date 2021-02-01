@@ -1,5 +1,4 @@
 import { FunctionComponent } from 'preact';
-import { css } from '@emotion/react';
 
 // https://feathericons.com/
 export const ICON_TYPES = {
@@ -53,9 +52,7 @@ const Icon: FunctionComponent<IIconProps> = ({ name, color, strokeWidth = 3, siz
     strokeWidth={strokeWidth}
     width={size}
     height={size}
-    css={css`
-      stroke: ${color || '--var(color-text)'};
-    `}
+    style={{ stroke: color || '--var(color-text)' }}
   >
     ${ICON_TYPES[name]}
   </svg>

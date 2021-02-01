@@ -1,0 +1,41 @@
+.na-namecard {
+  --color-red: #df2323;
+
+  background-color: white;
+  width: calc(95vw - 0.4em);
+  border: 0.2em solid white;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.na-namecard__title {
+  color: white;
+  background-color: var(--color-red);
+  border-radius: 0.5em 0.5em 0 0;
+  padding: 0.5em;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.na-namecard__title:first-child {
+  font-weight: bold;
+  font-size: 2.2em;
+  line-height: 1em;
+}
+
+.na-namecard__title:last-child {
+  font-size: 0.8em;
+}
+
+.na-namecard__name {
+  font-family: var(--font-marker);
+  font-size: 14vw;
+  line-height: 2em;
+}
+
+.na-namecard__footer {
+  height: 2em;
+  display: block;
+  background-color: var(--color-red);
+  border-radius: 0 0 0.5em 0.5em;
+}
