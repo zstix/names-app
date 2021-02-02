@@ -1,12 +1,13 @@
 import { render } from 'preact';
 
-import Name from './layouts/Name';
+// import Name from './layouts/Name';
+import List from './layouts/List';
 
 import './styles.css';
 
 const App = (
   <div>
-    <Name />
+    <List />
   </div>
 );
 

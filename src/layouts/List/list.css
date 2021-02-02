@@ -1,0 +1,44 @@
+.na-list {
+  background-color: beige;
+  margin: 1em;
+  background-image:
+    linear-gradient(90deg, transparent 50px, lightblue 50px, lightblue 52px, transparent 52px),
+    linear-gradient(gainsboro 2px, transparent 2px);
+  background-size: 100% 26px;
+  padding-bottom: 22px;
+}
+
+.na-list__title {
+  background-color: beige;
+  padding-left: 60px;
+  background-image: linear-gradient(90deg, transparent 50px, lightblue 50px, lightblue 52px, transparent 52px);
+  background-size: 100% 1.2em;
+  font-family: var(--font-marker);
+  height: 66px;
+  font-size: 2em;
+  padding-top: 30px;
+  margin-bottom: 22px;
+}
+
+.na-list ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 60px;
+  padding-top: 19px;
+  line-height: 26.5px;
+  list-style: none;
+  font-size: 20px;
+}
+
+.na-list ul li.fav {
+  position: relative;
+}
+
+.na-list ul li.fav:before {
+  content: '*';
+  position: absolute;
+  font-family: var(--font-marker);
+  color: red;
+  top: 0;
+  right: calc(100% + 15px);
+}
