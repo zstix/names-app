@@ -17,13 +17,13 @@
   text-transform: uppercase;
 }
 
-.na-namecard__title:first-child {
+.na-namecard__title :first-child {
   font-weight: bold;
   font-size: 2.2em;
   line-height: 1em;
 }
 
-.na-namecard__title:last-child {
+.na-namecard__title :last-child {
   font-size: 0.8em;
 }
 
