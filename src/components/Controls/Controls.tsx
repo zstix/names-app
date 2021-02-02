@@ -1,8 +1,10 @@
-import { FunctionComponent } from 'preact';
+import { FunctionComponent as FC } from 'preact';
+
 import Icon from '../Icon';
+
 import './controls.css';
 
-const Controls: FunctionComponent = () => (
+const Controls: FC = () => (
   <div className="na-controls">
     <div role="button">
       <Icon name="x" />

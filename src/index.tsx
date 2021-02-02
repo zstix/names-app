@@ -1,12 +1,12 @@
 import { render } from 'preact';
-import NameCard from './components/NameCard';
-import Controls from './components/Controls';
+
+import Name from './layouts/Name';
+
 import './styles.css';
 
 const App = (
-  <div className="na-app">
-    <NameCard name="alexander" />
-    <Controls />
+  <div>
+    <Name />
   </div>
 );
 

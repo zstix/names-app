@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'preact';
+import { FunctionComponent as FC } from 'preact';
 
 // https://feathericons.com/
 export const ICON_TYPES = {
@@ -42,14 +42,14 @@ interface IIconProps {
   strokeWidth?: number;
 };
 
-const Icon: FunctionComponent<IIconProps> = ({ name, color, strokeWidth = 3, size = 24 }) => (
+const Icon: FC<IIconProps> = ({ name, color, strokeWidth = 3, size = 24 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     aria-hidden="true"
     strokeLinecap="round"
     fill="none"
-    strokeWidth={strokeWidth}
+    stroke-width={strokeWidth}
     width={size}
     height={size}
     style={{ stroke: color || '--var(color-text)' }}
